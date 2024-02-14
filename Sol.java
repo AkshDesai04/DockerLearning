@@ -2,7 +2,7 @@ class Sol {
     static Long counter = new Long(0);
 
     public static void main(String[] args) {
-        int size = 10;
+        int size = Integer.parseInt(args[0]);
         int[][] arr = new int[size][size];
 
         for(int i = 0;i < size;i++)
