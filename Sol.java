@@ -1,5 +1,7 @@
+import java.math.BigInteger;
+
 class Sol {
-    static Long counter = new Long(0);
+    static BigInteger counter = new BigInteger("0");
 
     public static void main(String[] args) {
         int size = Integer.parseInt(args[0]);
@@ -16,38 +18,38 @@ class Sol {
     }
 
     public static int numSubmatrixSumTarget(int[][] matrix, int target) {
-        counter++;
+        counter.add(BigInteger.ONE);
         int col_size = matrix.length;
-        counter++;
+        counter.add(BigInteger.ONE);
         int row_size = matrix[0].length;
-        counter++;
+        counter.add(BigInteger.ONE);
         int count = 0;
-        counter++;
+        counter.add(BigInteger.ONE);
 
-        counter++;
+        counter.add(BigInteger.ONE);
         for(int i = 0;i < col_size;i++) {
-        counter++;
-        counter++;
+        counter.add(BigInteger.ONE);
+        counter.add(BigInteger.ONE);
         
-        counter++;
+        counter.add(BigInteger.ONE);
             for(int j = 0;j < row_size;j++) {
-        counter++;
-        counter++;
+        counter.add(BigInteger.ONE);
+        counter.add(BigInteger.ONE);
 
-        counter++;
+        counter.add(BigInteger.ONE);
                 for(int k = i;k < col_size;k++) {
-        counter++;
-        counter++;
+        counter.add(BigInteger.ONE);
+        counter.add(BigInteger.ONE);
 
-        counter++;
+        counter.add(BigInteger.ONE);
                     for(int l = j;l < row_size;l++) {
-        counter++;
-        counter++;
+        counter.add(BigInteger.ONE);
+        counter.add(BigInteger.ONE);
 
-        counter++;
-        counter++;
+        counter.add(BigInteger.ONE);
+        counter.add(BigInteger.ONE);
                         if(sumOfSubMatrix(matrix, i, j, k, l) == target) {
-        counter++;
+        counter.add(BigInteger.ONE);
                             count++;
                         }
                     }
@@ -55,30 +57,30 @@ class Sol {
             }
         }
 
-        counter++;
+        counter.add(BigInteger.ONE);
         return count;
     }
 
     public static int sumOfSubMatrix(int[][] arr, int i, int j, int k, int l) {
-        counter++;
-        counter++;
+        counter.add(BigInteger.ONE);
+        counter.add(BigInteger.ONE);
         int sum = 0;
-        counter++;
+        counter.add(BigInteger.ONE);
         for(;i <= k;i++) {
-        counter++;
-        counter++;
+        counter.add(BigInteger.ONE);
+        counter.add(BigInteger.ONE);
 
-        counter++;
+        counter.add(BigInteger.ONE);
             for(int x = j;x <= l;x++) {
-        counter++;
-        counter++;
+        counter.add(BigInteger.ONE);
+        counter.add(BigInteger.ONE);
                 sum += arr[i][x];
-        counter++;
-        counter++;
+        counter.add(BigInteger.ONE);
+        counter.add(BigInteger.ONE);
             }
         }
 
-        counter++;
+        counter.add(BigInteger.ONE);
         return sum;
     }
 }
