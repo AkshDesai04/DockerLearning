@@ -2,10 +2,11 @@ class Sol {
     static Long counter = new Long(0);
 
     public static void main(String[] args) {
-        int[][] arr = new int[10000][10000];
+        int size = 10;
+        int[][] arr = new int[size][size];
 
-        for(int i = 0;i < 10000;i++)
-            for(int j = 0;j < 10000;j++)
+        for(int i = 0;i < size;i++)
+            for(int j = 0;j < size;j++)
                 arr[i][j] = 1;
 
         System.out.println("Array Built");
